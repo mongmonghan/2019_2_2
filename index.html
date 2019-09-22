@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>save earth</title>
+	<style type="text/css">
+	body{margin:0;padding: 0;background-image: url(water.jpeg);left: 0;top: 0;width: 100%;height: 100%;}
+	marquee {height: 100vh;position: absolute;top: 0;left: 0}
+	section {position: relative;z-index: 100}
+	.bag{max-width: 300px;animation: animate 3s linear infinite;}
+	.pla{max-width: 250px;animation: animate 1s linear infinite;}
+	.can{max-width: 200px;animation: animate 2s linear infinite;}
+	.octopus{max-width: 350px;animation: animate 60s linear infinite;}
+	.fish{max-width: 150px;animation: animate 50s linear infinite;}
+	.turtle{max-width: 400px;animation: animate 70s linear infinite;}
+	@keyframes animate{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
+	#myimg{width: 100%;height: 100%;margin:0;padding: 0;}
+	#click{width: 200px;position: absolute;left: 650px;top: 250px;animation: h 0.4s alternate infinite; }
+		@keyframes h {
+			to{width:130px;}
+		}
+	#s1   {position: absolute;width:600px;left:100px;top:100px;
+			opacity: 0;z-index: 0;}
+	#s3 {position: absolute;width:400px;left:400px;top:450px;opacity: 0;z-index: 0;}
+	#s2  {position: absolute;width:400px;left:950px;top:200px;opacity: 0;z-index: 0;}
+	#sec {opacity: 0;}
+	</style>
+</head>
+<body>
+	<img src="click.png" id="click">
+	  <img src="spongebob.jpg" id="myimg">
+  <audio id="mysound">
+  <source src="song.mp4" type="audio/mpeg">
+	</audio>
+
+	<img src="s1.gif" id="s1">
+	<img src="s2.gif" id="s2">
+	<img src="s3.gif" id="s3">
+
+	<script type="text/javascript">
+		myimg.onclick=function()
+		{myimg.src="spongebob.jpeg";
+		click.src="click.png";
+		myimg.style.opacity="0";
+		click.style.opacity="0";
+		mysound.play();
+		s1.style.opacity="1";
+		s2.style.opacity="1";
+		s3.style.opacity="1";
+		sec.style.opacity="1"
+		}
+	</script>
+
+<section id="sec">
+		<marquee behavior="alternate" scrollamount="40">
+			<marquee behavior="alternate" direction="down" scrollamount="30">
+				<img src="bag.png" class="bag">
+			</marquee>
+		</marquee>
+
+		<marquee behavior="alternate" scrollamount="10">
+			<marquee behavior="alternate" direction="down" scrollamount="20">
+				<img src="plastic.png" class="pla">
+			</marquee>
+		</marquee>
+
+		<marquee behavior="alternate" scrollamount="20">
+			<marquee behavior="alternate" direction="down" scrollamount="10">
+				<img src="can.png" class="can">
+				<img src="octopus.png" class="octopus">
+			</marquee>
+		</marquee>		
+
+		<marquee behavior="alternate" scrollamount="30">
+			<marquee behavior="alternate" direction="down" scrollamount="30">
+				<img src="fish.png" class="fish">
+			</marquee>
+		</marquee>	
+				<marquee behavior="alternate" scrollamount="70">
+			<marquee behavior="alternate" direction="down" scrollamount="20">
+				<img src="turtle.png" class="turtle">
+			</marquee>
+		</marquee>	
+</section>
+</body>
+</html>
